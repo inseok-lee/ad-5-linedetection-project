@@ -1,0 +1,11 @@
+<launch>
+	<!-- 노드실행 : 자이카 모터 제어기 구동 (xycar_motor.launch)-->
+	<include file="$(find xycar_motor)/launch/xycar_motor.launch" />
+	<!-- 노드실행 : 자이카 라이다 구동 -->
+	<!-- <include file="$(find xycar_lidar)/launch/lidar_noviewer.launch" /> -->
+	<!-- 노드실행 : 자이카 라이다 구동 -->
+	<include file="$(find usb_cam)/launch/usb_cam-noviewer.launch" />
+    <!-- 노드실행: 모터 구동 -->
+
+
+</launch>

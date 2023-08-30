@@ -1,0 +1,9 @@
+<launch>
+	<include file="$(find xycar_motor)/launch/xycar_motor.launch" />
+	<include file="$(find usb_cam)/launch/usb_cam-noviewer.launch" />
+
+    <node name="Lane_Keeping_System" pkg="LaneKeepingSystem" type="LaneKeepingSystem_node" output="screen"/>
+    <param name="config_path" type="str" value="$(find LaneKeepingSystem)/config/config.yaml"/>
+    <!--node name="rosbag" pkg="rosbag" type="play" args="$(find LaneKeepingSystem)/src/track.bag"/-->
+
+</launch>
